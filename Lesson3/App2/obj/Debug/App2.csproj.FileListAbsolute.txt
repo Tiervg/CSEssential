@@ -4,3 +4,9 @@ D:\GIT\CSEssential\Lesson3\App2\bin\Debug\App2.pdb
 D:\GIT\CSEssential\Lesson3\App2\obj\Debug\App2.exe
 D:\GIT\CSEssential\Lesson3\App2\obj\Debug\App2.pdb
 D:\GIT\CSEssential\Lesson3\App2\obj\Debug\App2.csprojResolveAssemblyReference.cache
+D:\Git\Study C#\CSEssential\Lesson3\App2\bin\Debug\App2.exe.config
+D:\Git\Study C#\CSEssential\Lesson3\App2\bin\Debug\App2.exe
+D:\Git\Study C#\CSEssential\Lesson3\App2\bin\Debug\App2.pdb
+D:\Git\Study C#\CSEssential\Lesson3\App2\obj\Debug\App2.csprojResolveAssemblyReference.cache
+D:\Git\Study C#\CSEssential\Lesson3\App2\obj\Debug\App2.exe
+D:\Git\Study C#\CSEssential\Lesson3\App2\obj\Debug\App2.pdb
