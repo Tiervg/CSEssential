@@ -1,0 +1,6 @@
+D:\Git\Study C#\CSEssential\Lesson4\App3\bin\Debug\App3.exe.config
+D:\Git\Study C#\CSEssential\Lesson4\App3\bin\Debug\App3.exe
+D:\Git\Study C#\CSEssential\Lesson4\App3\bin\Debug\App3.pdb
+D:\Git\Study C#\CSEssential\Lesson4\App3\obj\Debug\App3.csprojResolveAssemblyReference.cache
+D:\Git\Study C#\CSEssential\Lesson4\App3\obj\Debug\App3.exe
+D:\Git\Study C#\CSEssential\Lesson4\App3\obj\Debug\App3.pdb
