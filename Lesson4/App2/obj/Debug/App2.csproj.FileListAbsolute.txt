@@ -1,0 +1,5 @@
+D:\Git\Study C#\CSEssential\Lesson4\App2\bin\Debug\App2.exe.config
+D:\Git\Study C#\CSEssential\Lesson4\App2\bin\Debug\App2.exe
+D:\Git\Study C#\CSEssential\Lesson4\App2\bin\Debug\App2.pdb
+D:\Git\Study C#\CSEssential\Lesson4\App2\obj\Debug\App2.exe
+D:\Git\Study C#\CSEssential\Lesson4\App2\obj\Debug\App2.pdb
