@@ -1,0 +1,6 @@
+D:\GIT\CSEssential\Lesson3\App2\bin\Debug\App2.exe.config
+D:\GIT\CSEssential\Lesson3\App2\bin\Debug\App2.exe
+D:\GIT\CSEssential\Lesson3\App2\bin\Debug\App2.pdb
+D:\GIT\CSEssential\Lesson3\App2\obj\Debug\App3.csprojResolveAssemblyReference.cache
+D:\GIT\CSEssential\Lesson3\App2\obj\Debug\App2.exe
+D:\GIT\CSEssential\Lesson3\App2\obj\Debug\App2.pdb
