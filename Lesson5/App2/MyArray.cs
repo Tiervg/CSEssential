@@ -35,11 +35,11 @@ namespace App2
         }
 
         /// <summary>
-        /// Searching bigest value in array
+        /// Returns max value in an array
         /// </summary>
         /// <param name="array"></param>
         /// <returns></returns>
-        public int SearchBigestValue(int[] array)
+        public int MaxValue(int[] array)
         {
             int temp = array[0];
             for (int i = 0; i < array.Length; i++)
@@ -52,7 +52,12 @@ namespace App2
             return temp;
         }
 
-        public int SearchSmallestValue(int[] array)
+        /// <summary>
+        /// Returns minimal value in an array
+        /// </summary>
+        /// <param name="array"></param>
+        /// <returns></returns>
+        public int MinValue(int[] array)
         {
             int temp = array[0];
             for (int i = 0; i < array.Length; i++)
@@ -65,7 +70,12 @@ namespace App2
             return temp;
         }
 
-        public int SummAllElements(int[] array)
+        /// <summary>
+        /// Returns the sum of all elements in an array
+        /// </summary>
+        /// <param name="array"></param>
+        /// <returns></returns>
+        public int Summ(int[] array)
         {
             int summ = 0;
             for (int i = 0; i < array.Length; i++)
@@ -75,11 +85,21 @@ namespace App2
             return summ;
         }
 
-        public double AverageAllElements(int[] array)
+        /// <summary>
+        /// Returns average mean of array
+        /// </summary>
+        /// <param name="array"></param>
+        /// <returns></returns>
+        public int Average(int[] array)
         {
-            return SummAllElements(array) / array.Length;
+            return Summ(array) / array.Length;
         }
 
+        /// <summary>
+        /// Returns all negative values in an array
+        /// </summary>
+        /// <param name="array"></param>
+        /// <returns></returns>
         public int[] AllNegativeElements(int[] array)
         {
             int[] tempAr = new int[array.Length];

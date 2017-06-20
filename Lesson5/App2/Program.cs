@@ -16,10 +16,11 @@ namespace App2
             Console.Write("Array elements:\0");
             new MyArray().ShowArray(array);
             Console.WriteLine();
-            Console.WriteLine("Bigest value in array: {0}",new MyArray().SearchBigestValue(array));
-            Console.WriteLine("Smallest value in array: {0}",new MyArray().SearchSmallestValue(array));
-            Console.WriteLine("Summ of all elements of array: {0}",new MyArray().SummAllElements(array));
-            Console.WriteLine("Average of all elements in array: {0}",new MyArray().AverageAllElements(array));
+            Console.WriteLine("Maximum value in an array: {0}",new MyArray().MaxValue(array));
+            Console.WriteLine("Minimum value in an array: {0}",new MyArray().MinValue(array));
+            Console.WriteLine("Summ of all elements of array: {0}",new MyArray().Summ(array));
+            Console.WriteLine("Count of elements in an array: {0}",array.Length);
+            Console.WriteLine("Average of all elements in array: {0}",new MyArray().Average(array));
             int[] negative = new MyArray().AllNegativeElements(array);
             Console.Write("All negative elements in array:\0");
             for (int i = 0; i < negative.Length; i++)
