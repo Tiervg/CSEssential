@@ -42,7 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Book\Author.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="Book\BookAuthor.cs" />
+    <Compile Include="Book\BookContent.cs" />
+    <Compile Include="Book\BookTitle.cs" />
+    <Compile Include="FindAndReplaceManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
