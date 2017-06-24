@@ -33,7 +33,12 @@ namespace App2_App3
 
         public class Notes
         {
-            string[] notes = new string[5];
+            string[] notes = new string[10];
+
+            public string this[int index]
+            {
+                get { return notes[index]; }
+            }
 
             public string AddNote(string noteText)
             {
@@ -42,6 +47,7 @@ namespace App2_App3
                 {
                     if (notes[i] == null)
                     {
+                        
                         notes[i] = noteText;
                         result = string.Format("Note saved");
                         break;
