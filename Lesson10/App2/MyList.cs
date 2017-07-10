@@ -8,7 +8,14 @@ namespace App2
 {
     class MyList<T>
     {
-        T[] array = new T[4];
+        int lenth;
+        T[] array;
+
+        public MyList(int length)
+        {
+            array = new T[length];
+            this.lenth = length;
+        }
 
         public void Add(T arg)
         {
@@ -38,6 +45,8 @@ namespace App2
             }
         }
 
-        public int Count { get { return array.Length; } }
+        public int Count { get { return lenth; } }
+
+
     }
 }
