@@ -8,46 +8,57 @@ namespace App3
 {
     class Dictionary<Tkey, TValue>
     {
-
-        class Key<T> where T : Tkey,new()
+        class Key<T> where T : Tkey
         {
-            static int count = 4;
-            T[] array = new T[count];
-
-            public void Add(T key)
-            {
-                for (int i = 0; i < array.Length; i++)
-                {
-                    if (array[i]==null)
-                    {
-                        array[i] = key;
-                    }
-                }
-            }
-            public T this[T index]
-            {
-                get
-                {
-                    T temp = new T();
-                    for (int i = 0; i < array.Length; i++)
-                    {
-                        if (array[i]!= null)
-                        {
-                            temp = array[i];
-                        }
-                    }
-                    return temp;
-                }
-            }
-
+            public T Field { get; set; }
         }
-
         class Value<T> where T : TValue
         {
-            static int count = 4;
-            T[] array =new  T[count];
+            public T Field { get; set; }
+        }
 
+        static int count = 4;
+        Tkey[] arKey = new Tkey[count];
+        TValue[] arValue = new TValue[count];
 
+        public void Add(Tkey key, TValue value)
+        {
+            bool flag = false;
+            for (int i = 0; i < arKey.Length; i++)
+            {
+                for (int j = i; j < arValue.Length; j++)
+                {
+                    if (arValue[j]==null&&arKey[i]==null)
+                    {
+                        arKey[i] = key;
+                        arValue[j] = value;
+                        flag = true;
+                        break;
+                    }
+                }
+                if (flag)
+                {
+                    break;
+                }
+            }
+        }
+
+        public Tkey this[Tkey index]
+        {
+            get
+            {
+                Tkey temp = default(Tkey);
+                for (int i = 0; i < arKey.Length; i++)
+                {
+                    if (arKey[i]!=null)
+                    {
+                        if (tes==index)
+                        {
+                            temp = arKey[i];
+                        }
+                    }
+                }
+            }
         }
     }
 }
