@@ -5,26 +5,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-// В коллекцию  ArrayList, через вызов метода Add добавьте элементы структурного и ссылочного типа, переберите данную коллекцию с помощью, цикла for – 
-// С какой проблемой вы столкнулись?
+// В коллекцию  ArrayList, через вызов метода Add добавьте элементы структурного и ссылочного типа, переберите данную коллекцию с помощью, цикла for – С какой проблемой вы столкнулись?
 namespace App1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ArrayList myList = new ArrayList();
-            myList.Add(10);
-            myList.Add("Hello!");
-            myList.Add(7.5);
-            myList.Add("Test");
-            myList.Add("ArrayList don't have length property");
-            myList.Add("It have Count property");
-            Console.WriteLine(3.1415f);
-
-            for (int i = 0; i < myList.Count; i++)
+            ArrayList list = new ArrayList
             {
-                Console.WriteLine(myList[i]);
+                10,
+                "Hello",
+                20,
+                "Eizo",
+                30,
+                "Philips",
+                40,
+                "Defender"
+            };
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                Console.WriteLine(list[i]);
             }
         }
     }
