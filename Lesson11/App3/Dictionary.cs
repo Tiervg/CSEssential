@@ -8,30 +8,26 @@ namespace App3
 {
     class Dictionary<Tkey, TValue>
     {
-        class Key<T> where T : Tkey
-        {
-            public T Field { get; set; }
-        }
-        class Value<T> where T : TValue
-        {
-            public T Field { get; set; }
-        }
+        int count = 4;
+        Tkey[] keys;
+        TValue[] values;
 
-        static int count = 4;
-        Tkey[] arKey = new Tkey[count];
-        TValue[] arValue = new TValue[count];
-
+        public Dictionary()
+        {
+            keys = new Tkey[count];
+            values = new TValue[count];
+        }
         public void Add(Tkey key, TValue value)
         {
             bool flag = false;
-            for (int i = 0; i < arKey.Length; i++)
+            for (int i = 0; i < keys.Length; i++)
             {
-                for (int j = i; j < arValue.Length; j++)
+                for (int j = i; j < values.Length; j++)
                 {
-                    if (arValue[j]==null&&arKey[i]==null)
+                    if (keys[i] == null && values[j] == null)
                     {
-                        arKey[i] = key;
-                        arValue[j] = value;
+                        keys[i] = key;
+                        values[j] = value;
                         flag = true;
                         break;
                     }
@@ -43,22 +39,46 @@ namespace App3
             }
         }
 
-        public Tkey this[Tkey index]
+        public TValue this[Tkey index]
         {
             get
             {
-                Tkey temp = default(Tkey);
-                for (int i = 0; i < arKey.Length; i++)
+                TValue temp = default(TValue);
+                int tempindex = 0;
+                for (int i = 0; i < keys.Length; i++)
                 {
-                    if (arKey[i]!=null)
+                    if (keys[i] != null && keys[i].Equals(index))
                     {
-                        if (tes==index)
-                        {
-                            temp = arKey[i];
-                        }
+                        tempindex = i;
+                        break;
                     }
                 }
+                for (int i = 0; i < values.Length; i++)
+                {
+                    if (tempindex == i)
+                    {
+                        temp = values[i];
+                    }
+                }
+                return temp;
             }
         }
+
+        public int Count
+        {
+            get
+            {
+                int temp = keys.Length;
+                for (int i = 0; i < keys.Length; i++)
+                {
+                    if (keys[i]==null)
+                    {
+                        temp--;
+                    }
+                }
+                return temp;
+            }
+        }
+        
     }
 }

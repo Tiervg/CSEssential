@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{71324B97-B4F3-4677-BC96-CE316B6FDF9B}</ProjectGuid>
+    <ProjectGuid>{452CDDB8-4B6B-4571-8831-78D40AD6B833}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>App3</RootNamespace>
-    <AssemblyName>App3</AssemblyName>
+    <RootNamespace>App4</RootNamespace>
+    <AssemblyName>App4</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,13 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dictionary.cs" />
+    <Compile Include="ArrayList.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
