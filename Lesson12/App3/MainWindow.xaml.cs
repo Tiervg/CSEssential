@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Timers;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -29,8 +30,10 @@ namespace App3
         public MainWindow()
         {
             InitializeComponent();
+            InitializeTimer();
+            new Presenter(this);
         }
-
+        Timer timer;
         public event EventHandler TimerStart = null;
         public event EventHandler TimerStop = null;
         public event EventHandler TimerReset = null;
@@ -49,5 +52,16 @@ namespace App3
         {
             TimerReset(sender, e);
         }
+
+        void InitializeTimer()
+        {
+            timer = new Timer();
+            {
+                timer.Interval = 1000;
+                timer.Enabled = true;
+            }
+        }
+
+
     }
 }

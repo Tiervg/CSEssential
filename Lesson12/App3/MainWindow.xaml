@@ -11,9 +11,9 @@
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="Timer_Start" Content="Start" Grid.Column="1" HorizontalAlignment="Left" Margin="362,21,0,0" VerticalAlignment="Top" Width="105" Height="38" Click="timer_Start_Click"/>
-        <Button x:Name="Timer_Stop" Content="Stop" Grid.Column="1" HorizontalAlignment="Left" Margin="362,81,0,0" VerticalAlignment="Top" Width="105" Height="38" Click="timer_Stop_Click"/>
-        <Button x:Name="Timer_Reset" Content="Reset" Grid.Column="1" HorizontalAlignment="Left" Margin="362,142,0,0" VerticalAlignment="Top" Width="105" Height="38" Click="timer_Reset_Click"/>
+        <Button x:Name="Timer_Start" Content="Start" Grid.Column="1" HorizontalAlignment="Left" Margin="362,21,0,0" VerticalAlignment="Top" Width="105" Height="38" />
+        <Button x:Name="Timer_Stop" Content="Stop" Grid.Column="1" HorizontalAlignment="Left" Margin="362,81,0,0" VerticalAlignment="Top" Width="105" Height="38" />
+        <Button x:Name="Timer_Reset" Content="Reset" Grid.Column="1" HorizontalAlignment="Left" Margin="362,142,0,0" VerticalAlignment="Top" Width="105" Height="38" />
         <Label x:Name="hour_dec" Content="0" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Height="78" Grid.Column="1" Width="29" FontSize="36" FontWeight="Bold"/>
         <Label x:Name="hour" Grid.ColumnSpan="2" Content="0" HorizontalAlignment="Left" Margin="44,41,0,0" VerticalAlignment="Top" Height="78" Width="29" FontWeight="Bold" FontSize="36"/>
         <Label x:Name="minutes_dec" Grid.ColumnSpan="2" Content="0" HorizontalAlignment="Left" Margin="102,41,0,0" VerticalAlignment="Top" Height="78" Width="29" FontWeight="Bold" FontSize="36"/>
